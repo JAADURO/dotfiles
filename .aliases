@@ -1,0 +1,13 @@
+#!/bin/bash
+
+alias c='clear'
+
+alias ls='ls -la --color=auto'
+
+alias ll='ls -la --color=auto'
+
+alias grepc='grep --color=auto'
+
+alias memory='free -h'
+
+alias maj='sudo pacman -Syu'

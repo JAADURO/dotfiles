@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Créer un dossier et s'y déplacer
+function mkcd() {
+    mkdir -p "$1" && cd "$1"
+}
+
+# Créer un fichier et l'ouvrir dans vim
+function tvim() {
+    touch "$1" && vim "$1"
+}
+
+# Recherche insensible à la casse avec grep
+function mygrep() {
+    grep -i "$1" "${@:2}"
+}
+
+# Voir date et heure
+function currentdt() {
+    current_datetime="`date "+%Y-%m-%d %H:%M:%S"`";
+    echo $current_datetime;
+}
