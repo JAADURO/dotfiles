@@ -17,3 +17,7 @@ sudo pacman -Sy python3 python-pip python-virtualenv
 
 echo "Installing Bash-it for theme"
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it ~/.bash_it/install.sh
+
+echo "Copier les dotfiles vers dossier home et .config
+cp ".bashrc" "$HOME"
+cp ".gitconfig" "$HOME"
